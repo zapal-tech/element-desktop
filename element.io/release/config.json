@@ -1,48 +1,109 @@
 {
-    "update_base_url": "https://packages.element.io/desktop/update/",
-    "default_server_name": "matrix.org",
-    "default_server_config": {
-        "m.homeserver": {
-            "base_url": "https://matrix-client.matrix.org"
-        },
-        "m.identity_server": {
-            "base_url": "https://vector.im"
+  "default_server_name": "zapal.tech",
+  "default_server_config": {
+    "m.homeserver": {
+      "base_url": "https://matrix.zapal.tech"
+    },
+    "m.identity_server": {
+      "base_url": "https://matrix.zapal.tech"
+    }
+  },
+  "brand": "Zapal",
+  "branding": {
+    "welcome_background_url": "https://www.zapal.tech/images/hero-bg.webp",
+    "auth_header_logo_url": "https://www.zapal.tech/android-chrome-512x512.png",
+    "auth_footer_links": []
+  },
+  "element_call_COMMENT": {
+    "brand": "Zapal Call",
+    "use_exclusively": true
+  },
+  "permalink_prefix": "https://element.zapal.tech",
+  "default_country_code": "UK",
+  "default_federate": false,
+  "m.homeserver": {
+    "base_url": "https://matrix.zapal.tech"
+  },
+  "m.identity_server": {
+    "base_url": "https://matrix.zapal.tech"
+  },
+  "org.matrix.msc3575.proxy": {
+    "url": "https://matrix.zapal.tech"
+  },
+  "default_server_name": "zapal.tech",
+  "default_theme": "dark",
+  "disable_3pid_login": false,
+  "disable_custom_urls": true,
+  "disable_guests": false,
+  "disable_login_language_selector": false,
+  "io.element.e2ee": {
+    "secure_backup_required": true
+  },
+  "enable_presence_by_hs_url": {
+    "https://matrix.org": true,
+    "https://matrix.zapal.tech": true
+  },
+  "features": {
+    "feature_pinning": true,
+    "feature_jump_to_date": true,
+    "feature_video_rooms": true,
+    "feature_element_call_video_rooms": true,
+    "feature_group_calls": true,
+    "feature_bridge_state": true,
+    "feature_location_share_live": true,
+    "feature_new_room_decoration_ui": true,
+    "feature_notifications": true,
+    "feature_ask_to_join": true,
+    "feature_dm_verification": true
+  },
+  "integrations_rest_url": "https://scalar.vector.im/api",
+  "integrations_ui_url": "https://scalar.vector.im/",
+  "integrations_widgets_urls": [
+    "https://scalar.vector.im/_matrix/integrations/v1",
+    "https://scalar.vector.im/api",
+    "https://scalar-staging.vector.im/_matrix/integrations/v1",
+    "https://scalar-staging.vector.im/api",
+    "https://scalar-staging.riot.im/scalar/api"
+  ],
+  "map_style_url": "https://api.maptiler.com/maps/nl-cartiqo-dark/style.json?key=0p0MxxwfdqvkwdBoATIq",
+  "room_directory": {
+    "servers": ["matrix.zapal.tech", "matrix.org"]
+  },
+  "setting_defaults": {
+    "breadcrumbs": true,
+    "custom_themes": [
+      {
+        "name": "Zapal",
+        "is_dark": true,
+        "colors": {
+          "accent-color": "#f84c0b",
+          "primary-color": "#d10000",
+          "warning-color": "#d10000",
+          "sidebar-color": "#151515",
+          "roomlist-background-color": "#050505",
+          "roomlist-text-color": "#fff",
+          "roomlist-text-secondary-color": "#757575",
+          "roomlist-highlights-color": "#111",
+          "roomlist-separator-color": "#1F1F1F",
+          "timeline-background-color": "#000",
+          "timeline-text-color": "#fff",
+          "timeline-text-secondary-color": "#757575",
+          "timeline-highlights-color": "#070707",
+          "username-colors": ["#757575"],
+          "avatar-background-colors": ["#111"]
         }
+      }
+    ]
+  },
+  "terms_and_conditions_links": [
+    {
+      "url": "https://www.zapal.tech/privacy-policy",
+      "text": "Privacy Policy"
     },
-    "brand": "Element",
-    "integrations_ui_url": "https://scalar.vector.im/",
-    "integrations_rest_url": "https://scalar.vector.im/api",
-    "integrations_widgets_urls": [
-        "https://scalar.vector.im/_matrix/integrations/v1",
-        "https://scalar.vector.im/api",
-        "https://scalar-staging.vector.im/_matrix/integrations/v1",
-        "https://scalar-staging.vector.im/api",
-        "https://scalar-staging.riot.im/scalar/api"
-    ],
-    "bug_report_endpoint_url": "https://element.io/bugreports/submit",
-    "uisi_autorageshake_app": "element-auto-uisi",
-    "room_directory": {
-        "servers": ["matrix.org", "gitter.im", "libera.chat"]
-    },
-    "show_labs_settings": false,
-    "enable_presence_by_hs_url": {
-        "https://matrix.org": false,
-        "https://matrix-client.matrix.org": false
-    },
-    "terms_and_conditions_links": [
-        {
-            "url": "https://element.io/privacy",
-            "text": "Privacy Policy"
-        },
-        {
-            "url": "https://element.io/cookie-policy",
-            "text": "Cookie Policy"
-        }
-    ],
-    "posthog": {
-        "project_api_key": "phc_Jzsm6DTm6V2705zeU5dcNvQDlonOR68XvX2sh1sEOHO",
-        "api_host": "https://posthog.element.io"
-    },
-    "privacy_policy_url": "https://element.io/cookie-policy",
-    "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
+    {
+      "url": "https://www.zapal.tech/terms-of-use",
+      "text": "Terms of Use"
+    }
+  ],
+  "show_labs_settings": true
 }
